@@ -1,0 +1,218 @@
+@import './header.css';
+* { 
+    margin:0px; 
+    padding:0px; 
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* main */
+.active-section {
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .5);
+}
+
+/*Service Section starts here*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+.sevice-div {
+    margin: 50px auto;
+    width: 1250px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.s-div {
+    width: 100%;
+    display: flex;
+}
+.s-img-div {
+    height: 300px;
+    width: 40%;
+    margin-right: 30px;
+    background-image: url(../images/service.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 100px;
+    display: block;
+}
+.s-text-div {
+    height: 100%;
+    display: block;
+    width: 60%;
+}
+.s-text-div h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.s-text-div p {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: grey;
+}
+.s-text-div ol {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+}
+.s-text-div li {
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 1.1px;
+}
+
+.service-box-div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    grid-template-areas: 'd d d';
+}
+.service-box-div .d {
+
+    margin-right: 40px;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+.d:nth-child(1) {
+    background-color: red;
+}
+.d:nth-child(2) {
+    background: rgba(0, 168, 107, 1);
+}
+.d:last-child {
+    margin-right: 0px;
+    background: orange;
+}
+.d img {
+    margin-bottom: 30px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.d h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.d p {
+    line-height: 25px;
+    letter-spacing: 1.2px;
+}
+/*Service Section ends here*/
+
+
+/*@media properties*/
+@media(max-width: 810px) {
+    section h1 {
+        margin-bottom: 30px;
+    }
+    .s-div {
+        display: grid;
+        grid-template-areas: 'a' 'b';
+    }
+    .s-img-div {
+        grid-area: a;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .s-text-div {
+        grid-area: b;
+        width: 100%;
+    }
+}
+@media(max-width: 600px) {
+    section h1 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    section h2 {
+        margin-bottom: 20px;
+    }
+    .s-img-div {
+        height: 250px;
+    }  
+    .service-box-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .service-box-div .d {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .service-box-div .d:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+/*Sections*/
+.section {
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.section h1 {
+    color: #ffffff;
+}
+#About {
+    background-image: url(../images/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Team{
+    background-image: url(../images/ourteam.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Gallery {
+    background-image: url(../images/gallery.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Tuition {
+    background-image: url(../images/plan.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Contact {
+    background-image: url(../images/contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 700px) {
+    .section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.section:last-child {
+    margin-bottom: 0px;
+}
