@@ -10,12 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
-/* main */
 .active-section {
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, .5);
 }
 
-/*Service Section starts here*/
 section {
     display: flex;
     justify-content: center;
@@ -120,10 +118,7 @@ section h1 {
     line-height: 25px;
     letter-spacing: 1.2px;
 }
-/*Service Section ends here*/
 
-
-/*@media properties*/
 @media(max-width: 810px) {
     section h1 {
         margin-bottom: 30px;
@@ -166,9 +161,8 @@ section h1 {
     }
 }
 
-/*Sections*/
 .section {
-    height: 500px;
+    height: 800px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
